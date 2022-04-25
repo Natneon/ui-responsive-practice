@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Travel.now</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+   <div class="overlay" id="overlay">
+
+      <h3>Searching Now...</h3>
+
+   </div>
+  <div class="hero-bg">
+    <section class="top">
+      <header>
+          <a href="#">Travel.now</a>
+      </header>
+      <h1><span>The World</span>Is your playground</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellat fugiat asperiores beatae voluptas quas, possimus minima ab dolores aliquid?</p>
+
+      <div class="form-container">  <!--Input de la forma-->
+        <form action="">
+            <div class="form-left">  <!--responsive div-->
+              <label for="city">Where you want to travel?</label>
+              <input type="text" name="city" id="city">
+              <p>Example: "Virgin Islands"</p>
+            </div>
+
+            <input type="button" value="Book Now" id="cta-btn">
+        </form>
+      </div>
+    </section>
+  </div>
+   <section class="authentic">
+     <div class="right-col">
+       <h2>Lorem Ipsum</h2>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, amet dignissimos libero accusamus quis dolor, consectetur unde dolorem dolores explicabo officiis voluptatum velit autem corporis iusto eaque iure similique excepturi doloremque itaque vel omnis! Eligendi est optio officia! Voluptate, molestias?</p>
+     </div>
+      <img src="https://images.pexels.com/photos/3536511/pexels-photo-3536511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="bank of fish">
+   </section>
+
+   <script>
+
+     let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+
+   </script>
+</body>
+</html>
